@@ -2,6 +2,7 @@ var app = new Vue (
   {
     el:'#root',
     data: {
+      index: 0,
       imgSrc: [
         'https://www.changethefuture.it/assets/uploads/2020/05/animali-selvatici.jpg',
         'https://www.larepubblicadeglianimali.com/wordpress/wp-content/uploads/2019/08/incendi-amazzonia-conseguenze-animali-la-repubblica-degli-animali-805x527.jpg',
@@ -9,8 +10,11 @@ var app = new Vue (
       ]
     },
     methods: {
+      next: function () {
+        this.index++;
+      },
       prev: function () {
-        console.log('ok');
+        this.index--;
       }
     }
   }
