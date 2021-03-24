@@ -11,10 +11,19 @@ var app = new Vue (
     },
     methods: {
       next: function () {
-        this.index++;
+        if (this.index < this.imgSrc.length - 1) {
+          this.index++;
+        } else {
+          this.index = 0;
+        }
       },
       prev: function () {
-        this.index--;
+        if (this.index < this.imgSrc.length - 1) {
+          this.index--;
+        } else {
+          this.index = 2;
+        }
+
       }
     }
   }
