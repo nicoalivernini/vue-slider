@@ -18,13 +18,12 @@ var app = new Vue (
         }
       },
       prev: function () {
-        if (this.index < this.imgSrc.length - 1) {
+        if (this.index > 0) {
           this.index--;
         } else {
-          this.index = 2;
+          this.index = this.imgSrc.length - 1;
         }
-
-      }
+      },
     }
   }
 );
