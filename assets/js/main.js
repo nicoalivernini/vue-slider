@@ -39,6 +39,6 @@ var app = new Vue (
       },
 
 
-    }
-  }
+    } //Chiusura methods
+  } //Chiusura Vue
 ); //Chiusura Vue
