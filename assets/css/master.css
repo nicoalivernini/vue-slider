@@ -12,7 +12,17 @@
   margin: 0 auto;
 }
 
-i {
+.next > i, .prev > i {
   font-size: 45px;
   padding: 0 20px;
+}
+
+.dot > i {
+  font-size: 30px;
+  padding: 10px 5px;
+  color: gray;
+}
+
+.dot > i.active {
+  color: blue;
 }
