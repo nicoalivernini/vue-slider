@@ -3,3 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vh;
+  margin: 0 auto;
+}
+
+i {
+  font-size: 45px;
+  padding: 0 20px;
+}
